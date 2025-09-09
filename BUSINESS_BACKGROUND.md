@@ -1,4 +1,4 @@
-## 🏢 Business Background
+## Business Background
 
 Healthcare facilities worldwide often struggle with **high patient volumes**, limited medical staff, and manual triage processes that can slow down critical care. In many clinics and hospitals, patients wait for long periods before being assessed, which can sometimes result in delays for those with urgent conditions. 
 
