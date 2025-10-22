@@ -1,0 +1,187 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Motor Vehicle Repair &amp; Towing Dataset | Kaggle</title>
+  <meta charset="utf-8" />
+    <meta name="robots" content="index, follow" />
+  <meta name="description" content="Detailed synthetic data on vehicle repairs, towing, and service history" />
+    <meta name="keywords" content="automobiles and vehicles,data analytics,beginner,text,data cleaning" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+  <meta name="theme-color" content="#008ABC" />
+  <script nonce="ju5mohGzlbpGbiAwM/HFTA==" type="text/javascript">
+    window["pageRequestStartTime"] = 1761117164548;
+    window["pageRequestEndTime"] = 1761117164631;
+    window["initialPageLoadStartTime"] = new Date().getTime();
+  </script>
+  <script nonce="ju5mohGzlbpGbiAwM/HFTA==" id="gsi-client" src="https://accounts.google.com/gsi/client" async defer></script>
+  <script nonce="ju5mohGzlbpGbiAwM/HFTA==">window.KAGGLE_JUPYTERLAB_PATH = "/static/assets/jupyterlab-v4/jupyterlab-index-33f8ac598036b9876fd8.html";</script>
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin="anonymous" /><link rel="preconnect" href="https://stats.g.doubleclick.net" /><link rel="preconnect" href="https://storage.googleapis.com" /><link rel="preconnect" href="https://apis.google.com" />
+    <link href="/static/images/favicon.ico" rel="shortcut icon" type="image/x-icon" id="dynamic-favicon" />
+  <link rel="manifest" href="/static/json/manifest.json" crossorigin="use-credentials">
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i&display=swap"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Symbols:FILL@0..1&display=block"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i&display=swap"
+    rel="stylesheet" media="print" id="async-google-font-1" />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Symbols:FILL@0..1&display=block"
+    rel="stylesheet" media="print" id="async-google-font-2" />
+  <script nonce="ju5mohGzlbpGbiAwM/HFTA==" type="text/javascript">
+    const styleSheetIds = ["async-google-font-1", "async-google-font-2"];
+    styleSheetIds.forEach(function (id) {
+      document.getElementById(id).addEventListener("load", function() {
+        this.media = "all";
+      });
+    });
+  </script>
+
+
+    <link rel="canonical" href="https://www.kaggle.com/datasets/aryan208/motor-vehicle-repair-and-towing-dataset" />
+    <link rel="stylesheet" type="text/css" href="/static/assets/app.css?v=2d4e7ec4eb689d926191" />
+
+  
+    
+ 
+      <script nonce="ju5mohGzlbpGbiAwM/HFTA==">
+        try{(function(a,s,y,n,c,h,i,d,e){d=s.createElement("style");
+        d.appendChild(s.createTextNode(""));s.head.appendChild(d);d=d.sheet;
+        y=y.map(x => d.insertRule(x + "{ opacity: 0 !important }"));
+        h.start=1*new Date;h.end=i=function(){y.forEach(x => x<d.cssRules.length ? d.deleteRule(x) : {})};
+        (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+        })(window,document,['.site-header-react__nav'],'dataLayer',2000,{'GTM-52LNT9S':true});}catch(ex){}
+    </script>
+    <script nonce="ju5mohGzlbpGbiAwM/HFTA==">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-T7QHS60L4Q', {
+            'optimize_id': 'GTM-52LNT9S',
+            'displayFeaturesTask': null,
+            'send_page_view': false,
+            'content_group1': 'Datasets',
+            'user_properties': {
+                'logged_in': false,
+            }
+        });
+    </script>
+    <script nonce="ju5mohGzlbpGbiAwM/HFTA==" async src="https://www.googletagmanager.com/gtag/js?id=G-T7QHS60L4Q"></script>
+
+  
+    
+    <meta property="og:url" content="https://www.kaggle.com/datasets/aryan208/motor-vehicle-repair-and-towing-dataset" />
+    <meta property="og:title" content="Motor Vehicle Repair &amp; Towing Dataset" />
+    <meta property="og:description" content="Detailed synthetic data on vehicle repairs, towing, and service history" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://storage.googleapis.com/kaggle-datasets-images/7330810/11680241/9992bec6aa20d43844caf5dd766ca49c/dataset-card.png?t=2025-05-05-07-21-06" />
+    <meta property="fb:app_id" content="2665027677054710" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@kaggledatasets" />
+
+
+  <meta name="twitter:site" content="@Kaggle" /> 
+  
+    
+            <script nonce="ju5mohGzlbpGbiAwM/HFTA==" type="application/ld+json">{"@context":"http://schema.org/","@type":"Dataset","name":"Motor Vehicle Repair &amp; Towing Dataset","description":"This synthetic dataset simulates over 2 million detailed motor vehicle service and towing records from 2020 to 2024. It includes comprehensive data on service types, repair details, customer and mechanic information, costs, feedback, towing specifics, and more. Designed for machine learning, statistical analysis, and data science education, this dataset offers realistic variability across vehicle types and services, enabling robust experimentation in classification, regression, customer behavior modeling, and cost prediction.","url":"https://www.kaggle.com/aryan208/motor-vehicle-repair-and-towing-dataset","version":1,"keywords":["subject, science and technology, transportation, automobiles and vehicles","technique, data analytics","audience, beginner","data type, text","analysis, data cleaning"],"license":{"@type":"CreativeWork","name":"CC0: Public Domain","url":"https://creativecommons.org/publicdomain/zero/1.0/"},"identifier":["7330810"],"includedInDataCatalog":{"@type":"DataCatalog","name":"Kaggle","url":"https://www.kaggle.com"},"creator":{"@type":"Person","name":"Aryan Kumar","url":"https://www.kaggle.com/aryan208","image":"https://storage.googleapis.com/kaggle-avatars/thumbnails/13418410-kg.jpg?t=2024-02-25-09-09-26"},"distribution":[{"@type":"DataDownload","requiresSubscription":true,"encodingFormat":"zip","fileFormat":"zip","contentUrl":"https://www.kaggle.com/datasets/aryan208/motor-vehicle-repair-and-towing-dataset/download?datasetVersionNumber=1","contentSize":"87065234 bytes"}],"commentCount":0,"dateModified":"2025-05-05T05:03:34.35Z","discussionUrl":"https://www.kaggle.com/aryan208/motor-vehicle-repair-and-towing-dataset/discussion","alternateName":"Detailed synthetic data on vehicle repairs, towing, and service history","isAccessibleForFree":true,"thumbnailUrl":"https://storage.googleapis.com/kaggle-datasets-images/7330810/11680241/9992bec6aa20d43844caf5dd766ca49c/dataset-card.png?t=2025-05-05-07-21-06","interactionStatistic":[{"@type":"InteractionCounter","interactionType":"http://schema.org/CommentAction","userInteractionCount":0},{"@type":"InteractionCounter","interactionType":"http://schema.org/DownloadAction","userInteractionCount":133},{"@type":"InteractionCounter","interactionType":"http://schema.org/ViewAction","userInteractionCount":633},{"@type":"InteractionCounter","interactionType":"http://schema.org/LikeAction","userInteractionCount":0}]}</script>
+        
+
+  
+    
+
+  
+    
+
+
+    <script nonce="ju5mohGzlbpGbiAwM/HFTA==">window['useKaggleAnalytics'] = true;</script>
+
+  <script id="gapi-target" nonce="ju5mohGzlbpGbiAwM/HFTA==" src="https://apis.google.com/js/api.js" defer
+    async></script>
+  <script nonce="ju5mohGzlbpGbiAwM/HFTA==" src="/static/assets/runtime.js?v=a7d947af6246bd30d965"></script>
+  <script nonce="ju5mohGzlbpGbiAwM/HFTA==" src="/static/assets/vendor.js?v=5f5ace68d8e037896b4c"></script>
+  <script nonce="ju5mohGzlbpGbiAwM/HFTA==" src="/static/assets/app.js?v=9ff4cfd2c786c314b030"></script>
+    <script nonce="ju5mohGzlbpGbiAwM/HFTA==" type="text/javascript">
+      window.kaggleStackdriverConfig = {
+        key: 'AIzaSyA4eNqUdRRskJsCZWVz-qL655Xa5JEMreE',
+        projectId: 'kaggle-161607',
+        service: 'web-fe',
+        version: 'ci',
+        userId: '0'
+      }
+    </script>
+</head>
+<body>
+  <div id="root">
+    
+
+
+
+
+
+
+
+
+<script nonce="ju5mohGzlbpGbiAwM/HFTA==" type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    jax: ['input/TeX', 'output/SVG'],
+    "HTML-CSS": {
+    preferredFont: "TeX",
+    availableFonts: ["STIX", "TeX"],
+    linebreaks: {
+    automatic: true
+    },
+    EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+    inlineMath: [["\\(", "\\)"], ["\\\\(", "\\\\)"]],
+    displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+    processEscapes: true,
+    ignoreClass: "tex2jax_ignore|dno"
+    },
+    TeX: {
+    noUndefined: {
+    attributes: {
+    mathcolor: "red",
+    mathbackground: "#FFEEEE",
+    mathsize: "90%"
+    }
+    }
+    },
+    Macros: {
+    href: "{}"
+    },
+    skipStartupTypeset: true,
+    messageStyle: "none",
+    extensions: ["Safe.js"],
+    });
+</script>
+<script type="text/javascript" nonce="ju5mohGzlbpGbiAwM/HFTA==">
+  window.addEventListener("DOMContentLoaded", () => {
+    const head = document.getElementsByTagName("head")[0];
+    const lib = document.createElement("script");
+    lib.type = "text/javascript";
+    // Always use the production asset in local dev, which is served from GCS. We tried to proxy and / or serve this
+    // in a better way in localhost, but it didn't work out. See b/328073416#comment8 for details.
+    const forceProdHost = window.location.hostname === "localhost";
+    lib.src = `${forceProdHost ? "https://www.kaggle.com" : ""}/static/mathjax/2.7.9/MathJax.js?config=TeX-AMS_SVG`;
+    head.appendChild(lib);
+  });
+</script>
+
+
+
+
+
+
+
+
+
+  </div>
+</body>
+</html>
